@@ -1,0 +1,17 @@
+@media screen and (max-width:640px){
+  .sm-col-20-80 > *:nth-child(2n+1){
+    width:20%;
+  }
+  .sm-col-20-80 > *:nth-child(2n+2){
+    width:80%;
+  }
+  .sm-col-20-80 > *:nth-child(n+3){
+    margin-top:1em;
+  }
+  .sm-col-20-80 > *:nth-child(2n+1) > *{
+    margin-right:calc(4em / 5);
+  }
+  .sm-col-20-80 > *:nth-child(2n+2) > *{
+    margin-right:calc(1em / 5);
+  }
+}

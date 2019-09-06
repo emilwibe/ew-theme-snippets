@@ -1,0 +1,9 @@
+@media screen and (max-width:400px){
+    .sm2-col-100 > *{
+      width:100%;
+    }
+    .sm2-col-100 > *:nth-child(n+2){
+      margin-top:1em;
+    }
+  }
+  

@@ -1,0 +1,8 @@
+.enhanced .search-field{
+  transition:width .3s ease-in;
+  width:15rem;
+}
+.enhanced .search-field.is-hidden{
+  border-bottom:0;
+  width:0;
+}

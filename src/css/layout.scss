@@ -1,0 +1,30 @@
+.content-grid{
+    display: grid;
+    grid-template-columns: 24rem repeat(12,1fr) 24rem;
+}
+.content-grid > *{
+    grid-column-start: 3;
+    grid-column-end: 13;
+}
+.l-wrapper{
+  margin:0 auto;
+  width:90%;
+}
+.l-wrapper.fw{
+    width:100%;
+}
+.l-wrapper.xl{
+    max-width:1400px;
+}
+.l-wrapper.l{
+  max-width:1140px;
+}
+.l-wrapper.m{
+    max-width:960px;
+}
+.l-wrapper.s{
+    max-width:768px;
+}
+.l-wrapper.xs{
+    max-width:600px;
+}

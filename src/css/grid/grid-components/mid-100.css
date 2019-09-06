@@ -1,0 +1,9 @@
+@media screen and (min-width:641px)
+and (max-width:1024px){
+  .md-col-100 > *{
+    width:100%;
+  }
+  .md-col-100 > *:nth-child(n+2){
+    margin-top:1em;
+  }
+}

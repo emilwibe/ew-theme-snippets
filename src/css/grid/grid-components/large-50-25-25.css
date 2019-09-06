@@ -1,0 +1,24 @@
+@media screen and (min-width:1025px){
+  .lg-col-50-25-25 > *:nth-child(3n+1){
+    width:50%;
+  }
+  .lg-col-50-25-25 > *:nth-child(3n+2){
+    width:25%;
+  }
+  .lg-col-50-25-25 > *:nth-child(3n+3){
+    width:25%;
+  }
+  .lg-col-50-25-25 > *:nth-child(n+4){
+    margin-top:1em;
+  }
+  .lg-col-50-25-25 > *:nth-child(3n+1) > *{
+    margin-right:0.5em;
+  }
+  .lg-col-50-25-25 > *:nth-child(3n+2) > *{
+    margin-left:0.5em;
+    margin-right:calc(1em / 4);
+  }
+  .lg-col-50-25-25 > *:nth-child(3n+3) > *{
+    margin-left:calc(3em / 4);
+  }
+}

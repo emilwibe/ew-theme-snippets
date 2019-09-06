@@ -1,0 +1,15 @@
+@media screen and (min-width:641px)
+and (max-width:1024px){
+  .md-col-50 > *{
+    width:50%;
+  }
+  .md-col-50 > *:nth-child(n+3){
+    margin-top:1em;
+  }
+  .md-col-50 > *:nth-child(odd) > *{
+    margin-right:calc(1em / 2);
+  }
+  .md-col-50 > *:nth-child(even) > *{
+    margin-left:calc(1em / 2);
+  }
+}

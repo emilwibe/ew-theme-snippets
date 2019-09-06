@@ -1,0 +1,19 @@
+@media screen and (min-width:641px)
+and (max-width:1024px){
+  .md-col-33 > *{
+    width:calc(100% / 3);
+  }
+  .md-col-33 > *:nth-child(n+4){
+    margin-top:1em;
+  }
+  .md-col-33 > *:nth-child(3n+1) > *{
+    margin-right:calc(2em / 3);
+  }
+  .md-col-33 > *:nth-child(3n+2) > *{
+    margin-left:calc(1em / 3);
+    margin-right:calc(1em / 3);
+  }
+  .md-col-33 > *:nth-child(3n+3) > *{
+    margin-left:calc(2em / 3);
+  }
+}

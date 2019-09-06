@@ -1,0 +1,22 @@
+@media screen and (max-width:640px){
+  .sm-col-25 > *{
+    width:25%;
+  }
+  .sm-col-25 > *:nth-child(n+5){
+    margin-top:1em;
+  }
+  .sm-col-25 > *:nth-child(4n+1) > *{
+    margin-right:calc(3em / 4);
+  }
+  .sm-col-25 > *:nth-child(4n+2) > *{
+    margin-left:calc(1em / 4);
+    margin-right:0.5em;
+  }
+  .sm-col-25 > *:nth-child(4n+3) > *{
+    margin-left:0.5em;
+    margin-right:calc(1em / 4);
+  }
+  .sm-col-25 > *:nth-child(4n+4) > *{
+    margin-left:calc(3em / 4);
+  }
+}

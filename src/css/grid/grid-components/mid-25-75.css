@@ -1,0 +1,18 @@
+@media screen and (min-width:641px)
+and (max-width:1024px){
+  .md-col-25-75 > *:nth-child(2n+1){
+    width:25%;
+  }
+  .md-col-25-75 > *:nth-child(2n+2){
+    width:75%;
+  }
+  .md-col-25-75 > *:nth-child(n+3){
+    margin-top:1em;
+  }
+  .md-col-25-75 > *:nth-child(2n+1) > *{
+    margin-right:calc(3em / 4);
+  }
+  .md-col-25-75 > *:nth-child(2n+2) > *{
+    margin-left:calc(1em / 4);
+  }
+}

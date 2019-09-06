@@ -1,0 +1,11 @@
+@media screen and (min-width:1025px){
+  .lg-col-50 > *{
+    width:50%;
+  }
+  .lg-col-50 > *:nth-child(odd) > *{
+    margin-right:calc(1em / 2);
+  }
+  .lg-col-50 > *:nth-child(even) > *{
+    margin-left:calc(1em / 2);
+  }
+}
