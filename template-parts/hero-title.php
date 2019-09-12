@@ -4,7 +4,7 @@
         <h1 class="title"><?php bloginfo('name'); ?></h1>
         <p class="description"><?php bloginfo('description'); ?></p>
 
-    <?php elseif(is_tax()) : ?>
+    <?php elseif(is_category() || is_tag()) : ?>
 
         <h1 class="title"><?php echo single_term_title(); ?></h1>
 

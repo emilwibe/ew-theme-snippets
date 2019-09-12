@@ -4,7 +4,7 @@
   <?php while(have_posts()) : the_post(); ?>
 
         <article>
-            <?php if(is_home() || is_tax()) : ?>
+            <?php if(is_home() || is_category() || is_tag()) : ?>
 
             <h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
