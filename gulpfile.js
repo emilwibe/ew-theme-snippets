@@ -17,13 +17,15 @@ const
       "./src/css/modules.scss",
       "./src/css/modules-e.scss",
       "./src/css/state.scss",
-      "./src/css/theme.scss"
+      "./src/css/theme.scss",
+      "./src/css/tomorrow-night-eighties.css"
     ],
     jsHeader: [
 
     ],
     jsFooter: [
-      "./src/js/scripts.js"
+      "./src/js/scripts.js",
+      "./src/js/highlightjs.js"
     ],
     grid: [
       "./src/css/grid/_grid-core.css"
