@@ -28,7 +28,7 @@
   <section class="hero">
     <div id="particles-js"></div>
 
-    <div class="l-wrapper xl row lg-col-50 md-col-50 sm-col-100">
+    <div class="l-wrapper xl">
       <div>
 
           <?php get_template_part('template-parts/hero', 'title'); ?>
