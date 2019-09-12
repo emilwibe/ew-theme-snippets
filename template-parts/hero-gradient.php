@@ -1,8 +1,8 @@
 <?php
   $hero_gradients = array(
-    array("#c6ffdd", "#fbd786", "#f7797d"),
+    //array("#c6ffdd", "#fbd786", "#f7797d"),
     //array("#99f2c8", "#1f4037"),
-    array("#ffefba", "#ffffff"),
+    //array("#ffefba", "#ffffff"),
     array("#74ebd5", "#acb6e5")
   );
 
