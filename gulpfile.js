@@ -78,4 +78,4 @@ gulp.task('git-push', function(done){
 
 gulp.task("git-all", gulp.series("git-add", "git-commit", "git-push"));
 
-gulp.task("default", gulp.series("grid", "css", "jsF"/*, "git-all"*/));
+gulp.task("default", gulp.series("grid", "css", "jsF", "git-all"));
