@@ -10,6 +10,12 @@
 
             <?php the_excerpt(); ?>
 
+            <?php else : ?>
+
+            <h1><?php the_title(); ?></h1>
+
+            <?php the_content(); ?>
+
             <?php endif; ?>
 
             <?php //the_content(); ?>
