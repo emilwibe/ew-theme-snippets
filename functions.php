@@ -18,7 +18,7 @@
   //REGISTER WIDGETS
     add_action('widgets_init', function(){
         register_sidebar(array(
-        'name' => 'primary_widgets',
+        'name' => __('Primary Widgets'),
         'id' => 'prim_widgets',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
