@@ -10,7 +10,7 @@
 
     <?php elseif($_GET['s']) : ?>
 
-        <h1 class="title"><?php echo _('Search Result'); ?> <?php echo $_GET['s']; ?></h1>
+        <h1 class="title"><?php echo __('Search Result', 'snippets'); ?> <?php echo $_GET['s']; ?></h1>
 
     <?php else : ?>
 
