@@ -8,6 +8,10 @@
     wp_enqueue_script('particles-js', get_template_directory_uri() . '/dist/js/particles.js', '', array('scripts-footer'), true);
   });
 
+add_filter( 'excerpt_length', function($length) {
+    return 20;
+} );
+
   //REGISTER MENUS
   add_action('after_setup_theme', function(){
     register_nav_menus(array(

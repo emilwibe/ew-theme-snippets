@@ -8,6 +8,10 @@
 
         <h1 class="title"><?php echo single_term_title(); ?></h1>
 
+    <?php elseif($_GET['s']) : ?>
+
+        <h1 class="title"><?php echo $_GET['s']; ?></h1>
+
     <?php else : ?>
 
         <h1 class="title"><?php the_title(); ?></h1>
