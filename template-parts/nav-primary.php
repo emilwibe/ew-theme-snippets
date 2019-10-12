@@ -1,5 +1,3 @@
-<button class="nav-toggle" id="nav-toggle">Menu</button>
-
 <?php
   wp_nav_menu(array(
     'container_id' => 'nav-primary',
