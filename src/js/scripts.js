@@ -9,3 +9,14 @@
     searchInput.focus();
   }, false);
 })();
+
+(function(){
+  var
+    navToggle = document.getElementById("nav-toggle"),
+    navPrimary = document.getElementById("nav-primary")
+  ;
+
+  navToggle.addEventListener("click", function(e){
+    navPrimary.classList.toggle("is-hidden")
+  }, false)
+})();
