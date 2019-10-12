@@ -18,5 +18,5 @@
 
   navToggle.addEventListener("click", function(e){
     navPrimary.classList.toggle("is-hidden")
-  }, false)
+  }, false);
 })();
