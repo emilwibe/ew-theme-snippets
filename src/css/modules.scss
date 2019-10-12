@@ -7,19 +7,6 @@
   align-items:center;
   display:flex;
 }
-@media screen and (max-width:600px){
-  .header.primary > *{
-    flex-direction:column;
-    order:3;
-  }
-  .nav.primary{
-    margin-left:0;
-    order:1;
-  }
-  .searchform{
-    order:2;
-  }
-}
 .hero{
   height:0;
   padding-bottom:50vh;
@@ -96,6 +83,17 @@
   }
 }
 @media screen and (max-width: 600px){
+  .header.primary > *{
+    flex-direction:column;
+    order:3;
+  }
+  .nav.primary{
+    margin-left:0;
+    order:1;
+  }
+  .searchform{
+    order:2;
+  }
   .title{
     font-size:4rem;
   }
