@@ -8,6 +8,8 @@
 
             <h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
+            <?php the_tags(); ?>
+
             <?php the_excerpt(); ?>
 
             <?php else : ?>
