@@ -3,8 +3,8 @@
     <main class="main">
   <?php while(have_posts()) : the_post(); ?>
 
-        <div>
-            <?php if(is_home() || is_category() || is_tag()) : ?>
+        <article>
+    <?php if(is_home() || is_category() || is_tag()) : ?>
 
             <h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
@@ -12,15 +12,13 @@
 
             <?php the_excerpt(); ?>
 
-            <?php else : ?>
+    <?php else : ?>
 
             <h1><?php the_title(); ?></h1>
 
             <?php the_content(); ?>
 
-            <?php endif; ?>
-
-            <?php //the_content(); ?>
+    <?php endif; ?>
 
         </article>
   <?php endwhile; ?>
