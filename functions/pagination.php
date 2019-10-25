@@ -101,15 +101,16 @@ function numeric_posts_pagination() {
     $links[] = $paged;
   }
 
-  /** Add the pages around the current page to the array */
-  if ( $paged >= 3 ) {
+  //ADD PAGES ADJACENT TO CURRENT PAGE TO ARRAY
+  if ($paged >= 3 ){
     $links[] = $paged - 1;
     $links[] = $paged - 2;
   }
-  if ( ( $paged + 2 ) <= $max ) {
+  if (( $paged + 2) <= $ma ){
     $links[] = $paged + 2;
     $links[] = $paged + 1;
   }
+
   echo '<nav class="pagination"><ul class="flex just-center">' . "\n";
   /** Previous Post Link */
   if ( get_previous_posts_link() )
