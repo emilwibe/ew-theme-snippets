@@ -89,7 +89,7 @@ function numeric_posts_pagination() {
   global $wp_query;
 
   //STOP EXECUTION IF ONLY 1 PAGE
-  if($wp_query->max_num_page <= 1){
+  if($wp_query->max_num_pages <= 1){
     return;
   }
 
