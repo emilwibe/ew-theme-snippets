@@ -111,8 +111,8 @@ function numeric_posts_pagination() {
     $links[] = $paged + 1;
   }
 
-  echo '<nav class="pagination">' . "\n";
-    echo '<ul class="flex just-center">' . "\n";
+  echo "\t" . '<nav class="pagination">' . "\n";
+    echo "\t\t\t" . '<ul class="flex just-center">' . "\n";
 
   //PREVIOUS POST LINK
   if(get_previous_posts_link()){
@@ -133,7 +133,7 @@ function numeric_posts_pagination() {
   sort($links);
   foreach((array) $links as $link){
     $class = $paged == $link ? ' class="active"' : '';
-    printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($link)), $link);
+    printf("\t\t\t\t" . '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($link)), $link);
   }
 
   //LINK TO LAST PAGE + ELLIPSES IF NECESSARY
