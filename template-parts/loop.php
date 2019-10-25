@@ -1,6 +1,8 @@
 <?php if(have_posts()) : ?>
 
     <main class="main">
+
+      <?php numeric_posts_pagination (); ?>
   <?php while(have_posts()) : the_post(); ?>
 
         <article>
