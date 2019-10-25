@@ -129,11 +129,11 @@ function numeric_posts_pagination() {
     }
   }
 
-  /** Link to current page, plus 2 pages in either direction if necessary */
-  sort( $links );
-  foreach ( (array) $links as $link ) {
+  //LINK TO CURRENT PAGE + 2 PAGES ADJACENT IN BOTH DIRECTIONS IF NECESSARY
+  sort($links);
+  foreach((array) $links as $link){
     $class = $paged == $link ? ' class="active"' : '';
-    printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+    printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($link)), $link);
   }
   /** Link to last page, plus ellipses if necessary */
   if ( ! in_array( $max, $links ) ) {
