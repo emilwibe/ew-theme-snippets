@@ -13,3 +13,6 @@
 
   //REGISTER WIDGETS
   require_once ('functions/widgets.php');
+
+  //PAGINATION NUMERIC
+  require_once ('functions/pagination.php');
