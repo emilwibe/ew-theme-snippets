@@ -93,11 +93,14 @@ function numeric_posts_pagination() {
     return;
   }
 
-  $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
-  $max   = intval( $wp_query->max_num_pages );
-  /** Add current page to the array */
-  if ( $paged >= 1 )
+  $paged = get_query_var('paged') ? absint(get_query_var('paged')) : 1;
+  $max = intval( $wp_query->max_num_pages );
+
+  //ADD CURRENT PAGE TO ARRAY
+  if ($paged >= 1){
     $links[] = $paged;
+  }
+
   /** Add the pages around the current page to the array */
   if ( $paged >= 3 ) {
     $links[] = $paged - 1;
