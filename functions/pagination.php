@@ -143,12 +143,12 @@ function numeric_posts_pagination() {
     }
 
     $class = $paged == $max ? ' class="active"' : '';
-    printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+    printf( "\t\t\t\t" . '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
   }
 
   //NEXT POST LINK
   if(get_next_posts_link()){
-    printf('<li class="next" id="nextPag">%s</li>' . "\n", get_next_posts_link());
+    printf("\t\t\t\t" . '<li class="next" id="nextPag">%s</li>' . "\n", get_next_posts_link());
   }
 
     echo '</ul>' . "\n";
