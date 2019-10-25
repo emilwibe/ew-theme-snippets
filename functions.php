@@ -1,6 +1,6 @@
 <?php
   //THEME SUPPORT
-  require_once('functions/theme-support');
+  require_once('functions/theme-support.php');
 
   //SCRIPTS AND STYLES
   require_once ('functions/scripts-styles.php');
