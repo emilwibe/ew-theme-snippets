@@ -151,7 +151,9 @@ function numeric_posts_pagination() {
 
   //NEXT POST LINK
   if(get_next_posts_link()){
-    printf("\t\t\t\t" . '<li class="next" id="nextPag">%s</li>' . "\n", get_next_posts_link());
+    echo '<li><a href="' . get_next_posts_page_link() . '"><i class="material-icons">chevron_right</i></a></li>' . "\n";
+  } else {
+    echo '<li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>' . "\n";
   }
 
     echo "\t\t\t" . '</ul>' . "\n";
