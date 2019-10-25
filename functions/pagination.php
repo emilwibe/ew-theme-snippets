@@ -111,7 +111,7 @@ function numeric_posts_pagination() {
     $links[] = $paged + 1;
   }
 
-  echo "\t" . '<nav class="pagination">' . "\n";
+  echo "\t\t" . '<nav class="pagination">' . "\n";
     echo "\t\t\t" . '<ul class="flex just-center">' . "\n";
 
   //PREVIOUS POST LINK
@@ -151,6 +151,6 @@ function numeric_posts_pagination() {
     printf("\t\t\t\t" . '<li class="next" id="nextPag">%s</li>' . "\n", get_next_posts_link());
   }
 
-    echo '</ul>' . "\n";
-  echo '</nav>' . "\n";
+    echo "\t\t\t" . '</ul>' . "\n";
+  echo "\t\t" . '</nav>' . "\n";
 }
