@@ -83,8 +83,9 @@ echo '</nav><!--/.pagination-->';
 
 //PAGINATION NUMERIC
 function numeric_posts_pagination() {
-  if( is_singular() )
+  if(is_singular()){
     return;
+  }
   global $wp_query;
   /** Stop execution if there's only 1 page */
   if( $wp_query->max_num_pages <= 1 )
