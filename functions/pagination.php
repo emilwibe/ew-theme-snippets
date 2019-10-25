@@ -111,12 +111,12 @@ function numeric_posts_pagination() {
     $links[] = $paged + 1;
   }
 
-  echo "\t\t" . '<nav class="pagination">' . "\n";
-    echo "\t\t\t" . '<ul class="flex just-center">' . "\n";
+  echo "\t\t" . '<nav class="l-pagination">' . "\n";
+    echo "\t\t\t" . '<ul class="pagination">' . "\n";
 
   //PREVIOUS POST LINK
   if(get_previous_posts_link()){
-    printf('<li class="previous" id="prevPag">%s</li>' . "\n", get_previous_posts_link());
+    printf('<li class="disabled" id="prevPag">%s</li>' . "\n", get_previous_posts_link());
   }
 
   //LINK TO FIRST PAGE + ELLIPSES IF NECESSARY

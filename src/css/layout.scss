@@ -28,3 +28,7 @@
 .l-wrapper.xs{
     max-width:600px;
 }
+.material-icons{
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
