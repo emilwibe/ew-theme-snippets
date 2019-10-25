@@ -111,12 +111,14 @@ function numeric_posts_pagination() {
     $links[] = $paged + 1;
   }
 
-  echo '<nav class="pagination">';
+  echo '<nav class="pagination">' . "\n";
     echo '<ul class="flex just-center">' . "\n";
 
-  /** Previous Post Link */
-  if ( get_previous_posts_link() )
-    printf( '<li class="previous" id="prevPag">%s</li>' . "\n", get_previous_posts_link() );
+  //PREVIOUS POST LINK
+  if(get_previous_posts_link()){
+    printf('<li class="previous" id="prevPag">%s</li>' . "\n", get_previous_posts_link());
+  }
+
   /** Link to first page, plus ellipses if necessary */
   if ( ! in_array( 1, $links ) ) {
     $class = 1 == $paged ? ' class="active"' : '';
