@@ -146,8 +146,11 @@ function numeric_posts_pagination() {
     printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
   }
 
-  /** Next Post Link */
-  if ( get_next_posts_link() )
-    printf( '<li class="next" id="nextPag">%s</li>' . "\n", get_next_posts_link() );
-  echo '</ul></nav>' . "\n";
+  //NEXT POST LINK
+  if(get_next_posts_link()){
+    printf('<li class="next" id="nextPag">%s</li>' . "\n", get_next_posts_link());
+  }
+
+    echo '</ul>' . "\n";
+  echo '</nav>' . "\n";
 }
