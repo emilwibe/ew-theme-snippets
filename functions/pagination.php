@@ -138,11 +138,14 @@ function numeric_posts_pagination() {
 
   //LINK TO LAST PAGE + ELLIPSES IF NECESSARY
   if (!in_array($max, $links)){
-    if (!in_array($max - 1, $links))
+    if (!in_array($max - 1, $links)){
       echo "\t\t" . '<li>…</li>' . "\n";
+    }
+
     $class = $paged == $max ? ' class="active"' : '';
     printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
   }
+
   /** Next Post Link */
   if ( get_next_posts_link() )
     printf( '<li class="next" id="nextPag">%s</li>' . "\n", get_next_posts_link() );
