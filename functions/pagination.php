@@ -116,7 +116,8 @@ function numeric_posts_pagination() {
 
   //PREVIOUS POST LINK
   if(get_previous_posts_link()){
-    printf('<li class="disabled" id="prevPag">%s</li>' . "\n", get_previous_posts_link());
+    //printf('<li class="disabled" id="prevPag">%s</li>' . "\n", get_previous_posts_link());
+    printf('<li class="disabled" id="prevPag"><i class="material-icons">chevron_left</i></li>' . "\n", get_previous_posts_link());
   }
 
   //LINK TO FIRST PAGE + ELLIPSES IF NECESSARY
