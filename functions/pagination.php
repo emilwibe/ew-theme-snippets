@@ -1,5 +1,7 @@
 <?php
   //PAGINATION NUMERIC
+  $links = array();
+
   function numeric_posts_pagination (){
     if(is_singular()) {
       return;
