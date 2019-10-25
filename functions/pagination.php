@@ -106,7 +106,7 @@ function numeric_posts_pagination() {
     $links[] = $paged - 1;
     $links[] = $paged - 2;
   }
-  if (( $paged + 2) <= $ma ){
+  if (( $paged + 2) <= $max ){
     $links[] = $paged + 2;
     $links[] = $paged + 1;
   }
@@ -155,7 +155,6 @@ function numeric_posts_pagination() {
   } else {
     echo '<li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>' . "\n";
   }
-
     echo "\t\t\t" . '</ul>' . "\n";
   echo "\t\t" . '</nav>' . "\n";
 }
