@@ -111,7 +111,9 @@ function numeric_posts_pagination() {
     $links[] = $paged + 1;
   }
 
-  echo '<nav class="pagination"><ul class="flex just-center">' . "\n";
+  echo '<nav class="pagination">';
+    echo '<ul class="flex just-center">' . "\n";
+
   /** Previous Post Link */
   if ( get_previous_posts_link() )
     printf( '<li class="previous" id="prevPag">%s</li>' . "\n", get_previous_posts_link() );
