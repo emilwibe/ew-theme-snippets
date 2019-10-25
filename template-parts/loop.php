@@ -20,7 +20,7 @@
 
         </article>
   <?php endwhile; ?>
-  <?php //numeric_posts_pagination (); ?>
+  <?php numeric_posts_pagination (); ?>
 
   </main>
 <?php endif; ?>
