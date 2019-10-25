@@ -87,9 +87,12 @@ function numeric_posts_pagination() {
     return;
   }
   global $wp_query;
-  /** Stop execution if there's only 1 page */
-  if( $wp_query->max_num_pages <= 1 )
+
+  //STOP EXECUTION IF ONLY 1 PAGE
+  if($wp_query->max_num_page <= 1){
     return;
+  }
+
   $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
   $max   = intval( $wp_query->max_num_pages );
   /** Add current page to the array */
