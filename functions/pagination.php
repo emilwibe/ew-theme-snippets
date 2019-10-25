@@ -82,7 +82,7 @@ echo '</nav><!--/.pagination-->';
 
 
 //PAGINATION NUMERIC
-function pov_numeric_posts_nav() {
+function numeric_posts_nav() {
   if( is_singular() )
     return;
   global $wp_query;
