@@ -158,3 +158,22 @@
     font-size:4rem;
   }
 }
+/*--FIX: EMBEDED BLOCKS SHOWING WP PLUGINS IS HIDDEN--*/
+.wp-block-embed__wrapper{
+	height:0;
+	overflow:hidden;
+	position:relative;
+}
+.is-provider-plugin-directory .wp-block-embed__wrapper{
+	padding-bottom:50%;
+}
+.wp-block-embed__wrapper iframe{
+	clip:auto !important;
+	height:100%;
+	left:0;
+	top:0;
+	width:98%;
+}
+.wp-block-embed__wrapper blockquote a{
+	display:none;
+}
