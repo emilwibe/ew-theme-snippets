@@ -1,8 +1,8 @@
-.blog .main article{
+.blog .main article, .archive .main article{
   border-bottom:1px solid #ddd;
   padding:20px 0;
 }
-.blog .main article:last-of-type{
+.blog .main article:last-of-type, .archive .main article:last-of-type{
   border-bottom:none;
 }
 .breadcrumbs a{
