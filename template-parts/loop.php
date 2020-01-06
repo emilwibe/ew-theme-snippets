@@ -24,11 +24,7 @@
 
         </article>
 
-  <?php if(is_single() || is_page()) : ?>
-
-    <?php echo get_comments(); ?>
-
-  <?php endif; //SINGULAR ?>
+  
 
   <?php endwhile; ?>
 
