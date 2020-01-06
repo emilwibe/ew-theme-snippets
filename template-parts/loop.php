@@ -23,6 +23,18 @@
     <?php endif; ?>
 
         </article>
+
+  <?php if(is_singular()) : ?>
+
+    <?php
+      // If comments are open or we have at least one comment, load up the comment template.
+ if ( comments_open() || get_comments_number() ) :
+  comments_template();
+endif;
+    ?>
+
+  <?php endif; //SINGULAR ?>
+
   <?php endwhile; ?>
 
   <?php numeric_posts_pagination (); ?>
