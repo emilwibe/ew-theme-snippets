@@ -24,7 +24,7 @@
 
         </article>
 
-  <?php if(is_singular()) : ?>
+  <?php if(is_single() || is_page()) : ?>
 
     <?php
       // If comments are open or we have at least one comment, load up the comment template.
