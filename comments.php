@@ -14,5 +14,5 @@ if ( $comments ) {
  echo '<p>' . $comment->comment_content . '</p>';
  }
 } else {
- echo 'No comments found.';
+ echo __('No comments found', 'snippets');
 }
