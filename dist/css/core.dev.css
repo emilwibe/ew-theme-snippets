@@ -924,6 +924,10 @@ figure {
 .wp-block-embed__wrapper blockquote a {
   display: none; }
 
+.comments-area {
+  background-color: rgba(61, 126, 153, 0.2);
+  padding: 20px; }
+
 .enhanced .searchform input:focus {
   outline: none; }
 
