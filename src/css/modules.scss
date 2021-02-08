@@ -39,7 +39,7 @@
 }
 .logo a{
   color:#333;
-  font-family: $font-sans;
+  font-family: var( --font-sans );
   font-weight:300;
   text-decoration: none;
   text-transform: lowercase;
