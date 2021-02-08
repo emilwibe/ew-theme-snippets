@@ -26,12 +26,16 @@
 
   <?php if(is_single() || is_page()) : ?>
 
+  <section class="comments-area">
+
     <?php
       // If comments are open or we have at least one comment, load up the comment template.
  if ( comments_open() || get_comments_number() ) :
   comments_template();
-endif;
-    ?>
+  ?>
+
+</section><!--/.comments-area-->
+  <?php endif; ?>
 
   <?php endif; //SINGULAR ?>
 
