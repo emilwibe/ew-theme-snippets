@@ -32,6 +32,8 @@ const sources = {
     "./src/js/scripts.js",
     "./src/js/highlightjs.js"
   ],
+  particlesJS: "./src/js/stand-alone/particles.js",
+  particlesConfig: ".src/js/stand-alone/particlesjs-config.json",
   cssGrid: [
     "./src/css/grid/_grid-core.css"
   ]
@@ -85,7 +87,9 @@ export const buildJSFooter = () => src(sources.jsFooter)
   }))
   .pipe(dest(dirs.distJS))
 
+export const particlesJS = () => src(sources.particlesJS)
+  .pipe(dest(dirs.distJS))
 
-export const dev = series(clean, build_grid, parallel(buildStylesDev, buildStylesProd, buildJSFooter/*, buildJSHead*/));
+export const dev = series(clean, build_grid, parallel(buildStylesDev, buildStylesProd, buildJSFooter, particlesJS /*, buildJSHead*/));
 
 export default dev;
