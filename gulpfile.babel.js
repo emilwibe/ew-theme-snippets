@@ -29,11 +29,10 @@ const sources = {
 
   ],
   jsFooter: [
-    "./src/js/scripts.js",
-    "./src/js/highlightjs.js"
+    "./src/js/scripts.js"
   ],
   particlesJS: "./src/js/stand-alone/particles.js",
-  particlesConfig: ".src/js/stand-alone/particlesjs-config.json",
+  hightlightJS: "./src/js/stand-alone/highlightjs.js",
   cssGrid: [
     "./src/css/grid/_grid-core.css"
   ]
@@ -90,6 +89,9 @@ export const buildJSFooter = () => src(sources.jsFooter)
 export const particlesJS = () => src(sources.particlesJS)
   .pipe(dest(dirs.distJS))
 
-export const dev = series(clean, build_grid, parallel(buildStylesDev, buildStylesProd, buildJSFooter, particlesJS /*, buildJSHead*/));
+  export const highlightJS = () => src(sources.hightlightJS)
+  .pipe(dest(dirs.distJS))
+
+export const dev = series(clean, build_grid, parallel(buildStylesDev, buildStylesProd, buildJSFooter, particlesJS, highlightJS /*, buildJSHead*/));
 
 export default dev;
