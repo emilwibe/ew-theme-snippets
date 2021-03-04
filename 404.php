@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 
-<main class="l-wrapper s">
+<section class="l-wrapper l row lg-col-66-33 md-col-75-25 sm-col-100">
+<main class="main">
     <p id="four-message" style="text-align:center;"></p>
 </main>
+
+    <?php get_template_part('template-parts/widgetarea', 'prim_widgets'); ?>
+  </section><!--/.l-wrapper.s-->
+
 <script>
 
 let four_o_four = [
@@ -72,7 +77,7 @@ setInterval(function(){
     printed += four_o_four[arrayCounter];
     fourMessage.innerHTML = printed;
     if(arrayCounter == four_o_length - 1) {
-        printed = printed + "\n";
+        printed = printed + "<br>";
         arrayCounter = 0;
     } else {
         arrayCounter += 1;
