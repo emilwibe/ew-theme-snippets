@@ -67,7 +67,7 @@ let printed;
 let arrayCounter = 0;
 
 setInterval(function(){
-    printed = printed += four_o_four[arrayCounter];
+    printed += four_o_four[arrayCounter];
     fourMessage.innerHTML = printed;
     if(arrayCounter == four_o_length - 1) {
         printed = printed + "\n";
