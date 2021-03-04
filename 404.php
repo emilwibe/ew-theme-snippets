@@ -63,7 +63,7 @@ let four_o_four = [
 ];
 let fourMessage = document.getElementById("four-message");
 let four_o_length = four_o_four.length;
-let printed;
+let printed = "";
 let arrayCounter = 0;
 
 setInterval(function(){
