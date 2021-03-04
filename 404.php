@@ -67,11 +67,13 @@ let printed;
 let arrayCounter = 0;
 
 setInterval(function(){
-    printed = printed + four_o_four[arrayCounter];
+    printed = printed += four_o_four[arrayCounter];
     fourMessage.innerHTML = printed;
     if(arrayCounter == four_o_length - 1) {
         printed = printed + "\n";
         arrayCounter = 0;
+    } else {
+        arrayCounter += 1;
     }
 }, 500);
 
