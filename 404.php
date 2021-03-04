@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="l-wrapper s">
-    <p id="four-message"></p>
+    <p id="four-message" style="text-align:center;"></p>
 </main>
 <script>
 
@@ -16,6 +16,7 @@ let four_o_four = [
     '#',
     '#',
     '#',
+    ' ',
     '4',
     '0',
     '4',
@@ -50,6 +51,7 @@ let four_o_four = [
     'I',
     'S',
     'T',
+    ' ',
     '#',
     '#',
     '#',
@@ -75,7 +77,7 @@ setInterval(function(){
     } else {
         arrayCounter += 1;
     }
-}, 500);
+}, 100);
 
 </script>
 
